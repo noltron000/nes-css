@@ -1,3 +1,3 @@
-# NES-CSS
-A NES controller made with CSS  
-Check it out on the web here: https://noltron000.github.io/nes-css/nes.html
+# NES Controller in CSS
+A NES controller made by hand with CSS.
+Check it out live on the web: https://projects.nebuloid.dev/nes-css/
