@@ -95,8 +95,9 @@ $game-sky: #6F7CB1;
 	// set location first
 	left: $cord-left + $gamepad-body-left;
 	// set dimensions next
+	top: 0;
 	width: $cord-radius;
-	height: $cord-height;
+	height: calc(100vh - 5vh - #{$gamepad-body-height + $gamepad-body-depth});
 	// set colors
 	background-color: $dark-grey;
 }
@@ -104,7 +105,8 @@ $game-sky: #6F7CB1;
 .gamepad-body {
 	// set location first
 	left: $gamepad-body-left;
-	top: $gamepad-body-top;
+	top: auto;
+	bottom: calc(5vh + #{$gamepad-body-depth});
 	// set dimensions next
 	width: $gamepad-body-width;
 	height: $gamepad-body-height;
@@ -118,6 +120,7 @@ $game-sky: #6F7CB1;
 
 .gamepad-body.depth {
 	// set dimensions next
+	bottom: 5vh;
 	height: $gamepad-body-height + $gamepad-body-depth;
 	// set colors
 	background-color: $side-grey;
@@ -372,4 +375,19 @@ body {
 	padding: 0;
 	margin: 0;
 	background: $game-sky
+}
+
+.cloud {
+	position: absolute;
+	top: 1vh;
+	width: 12vw;
+}
+
+.cloud.right {
+	top: 3vh;
+	right: 20vw;
+}
+
+.cloud.left {
+	left: 10vw;
 }

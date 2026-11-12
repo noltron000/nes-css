@@ -26,14 +26,16 @@ cord-left: -- 1/12 width
 
 .cord {
   left: 30.8333333333vw;
+  top: 0;
   width: 3.3333333333vw;
-  height: 10vh;
+  height: calc(95vh - 38.6666666667vw);
   background-color: #212121;
 }
 
 .gamepad-body {
   left: 10vw;
-  top: 10vh;
+  top: auto;
+  bottom: calc(5vh + 5.3333333333vw);
   width: 80vw;
   height: 33.3333333333vw;
   border-radius: 1.1111111111vw;
@@ -42,6 +44,7 @@ cord-left: -- 1/12 width
 }
 
 .gamepad-body.depth {
+  bottom: 5vh;
   height: 38.6666666667vw;
   background-color: #AFA9B5;
 }
@@ -228,6 +231,21 @@ body {
   padding: 0;
   margin: 0;
   background: #6F7CB1;
+}
+
+.cloud {
+  position: absolute;
+  top: 1vh;
+  width: 12vw;
+}
+
+.cloud.right {
+  top: 3vh;
+  right: 20vw;
+}
+
+.cloud.left {
+  left: 10vw;
 }
 
 /*# sourceMappingURL=nes.css.map */
